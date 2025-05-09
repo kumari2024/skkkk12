@@ -1,0 +1,126 @@
+/* Body and Base Styling */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(228, 170, 181);
+    color: rgb(8, 9, 10);
+    font-size: 18px; /* Base font size bigger */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #ff69b4;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: rgb(13, 26, 199);
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: #dbcd08;
+    text-decoration: underline;
+}
+
+/* Main Container */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+    padding: 60px;
+}
+
+/* Box Styling with Dual-Color Border */
+.box {
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    font-size: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border: 5px solid;
+    border-image: linear-gradient(45deg, #f81616, #0dc990) 1;
+    transition: border-image 0.5s ease, transform 0.3s ease;
+    box-shadow: 0 3px 8px rgb(248, 236, 60);
+}
+
+/* Hover Effect: Change Border Color */
+.box:hover {
+    border-image: linear-gradient(45deg, #320ff7, #c40c49) 1;
+    transform: scale(1.02);
+}
+
+.box:hover {
+    cursor: pointer;
+    color: #da0b0b;
+}
+/* Home Section Specific */
+#home {
+    background-image: url('image copy 8.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 310px 50px;
+    color: rgb(19, 17, 17);
+}
+
+#home .box {
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Gallery Image Style */
+.gallery-img {
+    width: 28%;
+    height: 220px;
+    margin: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #f14e85;
+    box-shadow: 0 3px 50cap rgb(92, 206, 17);
+    transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+/* Centered Image */
+.center-img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Home Text */
+.home-text {
+    font-size: 32px;
+    line-height: 1.8;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #ff6fa4;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
